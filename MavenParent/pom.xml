@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.youyuan.maven</groupId>
+  <artifactId>MavenParent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <build/>
+  
+  <!-- 配置依赖管理 -->
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.9</version>
+			<scope>test</scope>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  
+  <!-- 配置聚合 -->
+  <modules>
+  	<module>../HelloMaven</module>
+  	<module>../MavenSon</module>
+  	<module>../Maven-01</module>
+  	<module>../Maven-Web</module>
+  	<module>../HelloMavenFriend</module>
+  </modules>
+  
+</project>
